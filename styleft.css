@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Quicksand";
+    src: url("fonts/Quicksand.otf");
+}
+@font-face {
+    font-family: "MYRIADAT";
+    src: url("fonts/MYRIADAT.TTF");
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Quicksand";
+}
+.content{
+    flex: 1;
+}
+.main-footer{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;   
+}
+.main-footer ul{
+    list-style: none;
+}
+.main-footer h1{
+    font-size: 22px;
+    line-height: 117%;
+    color: #5C5470;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+footer{
+    border-top: 1px solid #fff;
+    font-size: 16px;
+    color: #352F44;
+    text-align: center;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+.logoinfo h2{
+    color: #352F44;
+    font-size: 30px;
+    margin-top: 5px;
+    font-family: "MYRIADAT";
+    font-weight: bold;
+}
+.contact-details{
+    margin-top: 20px;
+}
+.contact-details li{
+    list-style: none;
+    margin: 10px 0;
+}
+.contact-details li a{
+    text-decoration: none;
+    color: #352F44;
+    font-size: 15px;
+}
+.contact-details .bi{
+    color: #2A2438;
+    margin-right: 10px;
+}
+.sociallogos{
+    padding: 20px 0;
+}
+.sociallogos .logobox a{
+    padding: 0 10px;
+    text-decoration: none;
+    color: #2A2438;
+    font-size: 22px;
+}
+.com h1{
+    text-align: center;
+}
+.com p{
+    font-family: "MYRIADAT";
+    font-weight: bold;
+    font-size: 18px;
+}
+.com li{
+    text-align: center;
+    padding: 2px 0;
+    list-style: none;
+}
+.com li a{
+    text-decoration: none;
+    color: #5C5470;
+    font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+    .main-footer{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .info{
+        padding: 20px 0;
+    }
+}
+@media (max-width: 480px){
+    .main-footer{
+        grid-template-columns: 1fr;
+    }
+    .sociallogos{
+        padding: 20px 0;
+    }
+    .com{
+        padding: 20px 0;
+    }
+}
+.container{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 6px 40px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+

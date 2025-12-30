@@ -1,0 +1,128 @@
+.main-body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("resources/bn.jpg");
+    background-size: cover;
+}
+@font-face {
+    font-family: "Quicksand";
+    src: url("fonts/Quicksand.otf");
+}
+@font-face {
+    font-family: "MYRIADAT";
+    src: url("fonts/MYRIADAT.TTF");
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 60px;
+}
+.title01{
+    font-size: 30px;
+    font-family: "MYRIADAT";
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 9px #81B2D9;
+    text-align: center;
+    padding: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+@media screen and (max-width:768px){
+    .title01{
+        font-size: 23px;
+        position: center;
+        top: -30px;
+    }
+}
+@media screen and (width: 480px){
+    .title01{
+        font-size: 23px;
+    }
+}
+.logo{
+    background-image: url("resources/a.png");
+    height: 80px;
+    background-size: contain;
+    position: fixed;
+    margin-top: 20px;
+    margin-bottom: 650px;
+    width: 80px;
+}
+@media screen and (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+}
+.logo{animation: pulsing 2s infinite;}
+@keyframes pulsing {
+    0%{ transform: scale(1);}
+    50%{ transform: scale(1.20);}
+    100%{ transform: scale(1);}
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "MYRIADAT";
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: transparent;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ccc;
+    border-radius: 5000px;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons button,
+.buttons a {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5000px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: "MYRIADAT";
+}
+.btn1{
+    background: #81B2D9;
+}
+.btn2{
+   background: #CB7876;
+}
+.btn1:hover{
+    background: #3466A5;
+}
+.btn2:hover{
+    background: #FE4E4E;
+}
+.l1{
+    position: relative;
+    top: -27px;
+}

@@ -34,7 +34,7 @@
 
         <?php
 
-        $conn = new mysqli("localhost", "root", "Adhiya2003#", "iheaven", "3306");
+        // $conn = new mysqli("localhost", "root", "", "iheaven", "3306");
 
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
